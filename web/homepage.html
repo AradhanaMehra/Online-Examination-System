@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>E-Learn</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Michael Reed Welsh">
+  <meta name="description" content="Homepage page for Michael Welsh">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href='https://fonts.googleapis.com/css?family=Nunito%7CLobster%7CDroid+Serif' rel='stylesheet' type='text/css'>
+  <style>
+      * {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 0px;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+ul {
+  padding: 0;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+  text-shadow: 1px 1px 2px;
+}
+
+
+/*LINK CONFIGURATIONS******/
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+
+/*NAV BAR*********************/
+
+nav li:hover {
+  box-shadow: 0 0 7px rgb(150, 150, 150);
+}
+
+nav li:active {
+  background-color: gray;
+}
+
+nav ul {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+nav li {
+  background-color: white;
+  font-family: "Droid Serif", serif;
+  font-weight: bold;
+  display: block;
+  list-style: none;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+nav {
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+nav a {
+  padding: 5px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*PROFILE IMAGE SIZING AND SHADOW ALSO THE PARAGRAPH*/
+
+.profile {
+  width: 80%;
+  text-align: center;
+  margin: 35px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 2px;
+  display: block;
+  overflow: hidden;
+}
+
+.me p {
+  font-family: "Nunito", serif;
+  width: 90%;
+  text-align: center;
+  line-height: 1em;
+  margin: 0 auto;
+}
+
+
+/*PORTFOLIO STUFF ***************/
+
+.portfolio {
+  margin: 100px auto 0;
+  max-width: 90%;
+  text-align: center;
+  font-family: "Droid Serif", serif;
+}
+
+.portfolio img {
+  width: 90%;
+  height: 260px;
+  margin: 40px auto 20px;
+}
+
+.portfolio h3 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.portfolio p {
+  font-size: .9em;
+}
+.portfolio img {
+  max-height: 290px;
+  border: 2px solid black;
+}
+.portfolio img:hover {
+  box-shadow: 0 0 10px;
+}
+
+
+/*SKILLLLLLLLLS SECTION*********/
+
+.skills {
+  margin: 100px auto 0;
+  max-width: 90%;
+  text-align: center;
+  font-family: "Droid Serif", serif;
+}
+
+.skills p {
+  margin-top: 15px;
+  font-size: .9em;
+}
+
+.skills h3 {
+  text-decoration: underline;
+  font-size: 1em;
+  margin: 20px auto 5px;
+}
+
+
+/*SOCIAL MEDIA ICONS AND FOOTER********/
+
+footer {
+  box-shadow: 0 -2px 8px;
+  background-color: rgb(200, 200, 200);
+  margin: 100px auto 10px;
+  bottom: 0;
+  text-align: center;
+  font-size: .85em;
+  max-height: 250px;
+}
+
+.social {
+  text-align: center;
+  float: none;
+  margin-bottom: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+}
+
+footer p {
+  text-align: center;
+  display: block;
+  float: none;
+  padding-bottom: 15px;
+}
+
+footer h2 {
+  padding-top: 20px;
+}
+
+.largefoot {
+  display: none;
+}
+
+
+/*CLEARFIX*******/
+
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+
+/*MEDIA QUERIES @426******** IPAD SCREENS    ****/
+
+@media(min-width: 768px) {
+  nav a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  nav li {
+    display: inline-block;
+    width: 20%;
+    margin: 10px 10px;
+  }
+  .me {
+    display: inline-block;
+  }
+  .profile {
+    width: 35%;
+    float: right;
+    margin-right: 45px
+  }
+  .me p {
+    float: left;
+    width: 45%;
+    margin: 40px 0 0 40px;
+    text-align: left;
+  }
+  .portfolio {
+    max-width: 100%;
+    overflow: hidden;
+    clear: both;
+  }
+  .folio {
+    display: inline-block;
+    width: 45%;
+    overflow: hidden;
+    clear: both;
+    margin: 0 auto;
+    padding: 0;
+    vertical-align: top;
+  }
+  .folio p {
+    padding: 0 5px;
+  }
+  .skills p {
+    padding: 0 60px;
+  }
+  /*FOOTER PROBLEMS***********/
+  footer {
+    line-height: 1em;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+  }
+  .fleft {
+    display: inline-block;
+    float: left;
+    width: 50%;
+  }
+  .fright {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    margin: auto auto;
+  }
+  .largefoot {
+    display: inline-block;
+    margin: auto auto;
+  }
+  .largefoot li:hover {
+    box-shadow: 0 0 7px rgb(0, 0, 0);
+    background-color: white;
+  }
+  .largefoot li:active {
+    background-color: gray;
+  }
+  .largefoot ul {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .largefoot li {
+    padding: 10px 25px;
+    background-color: white;
+    font-family: "Droid Serif", serif;
+    font-weight: bold;
+    display: block;
+    list-style: none;
+    text-align: center;
+    margin: 10px;
+  }
+  .largefoot a {
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+  #smallhome {
+    display: none;
+  }
+}
+
+
+/*MONITORSSSSS**************/
+
+@media(min-width:1024px) {
+  nav {
+    margin: 40px;
+  }
+  nav li {
+    clear: both;
+    width: 20%;
+    margin-right: 10px;
+  }
+  h1 {
+    overflow: hidden;
+    font-size: 2.3em;
+    float: left;
+    margin-left: 35px;
+  }
+  nav ul {
+    margin-right: 20px;
+    float: right;
+    margin-top: 20px;
+    width: 60%;
+  }
+  nav a {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+  .me p {
+    line-height: 1.5em;
+    font-size: 1.5em;
+  }
+  .profile {
+    width: 40%;
+  }
+  .folio {
+    width: 32%;
+    display: inline-block;
+  }
+  .skills p {
+    padding: 0 25%;
+  }
+  .largefoot li {
+    display: inline-block;
+    margin: 25px 30px;
+    width: 30%;
+  }
+  .largefoot a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+  .fleft {
+    width: 40%;
+  }
+  .fright {
+    width: 60%;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h1 id="top">E-Learn</h1>
+    <ul>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#folio">Examinations</a></li>
+      <li><a href="#contact">Contact info</a></li>
+      <li><a href="#skills">Logging in</a></li>
+    </ul>
+  </nav>
+  <div class="me">
+    <img class="profile" src="image.jpg" >
+    <p>Welcome to E-Learn. An online platform to conduct examinations online. Login as teacher to create an exam and login as a student to take examinations. You can also see the examinations created and display them.</p>
+  </div>
+  <div class="portfolio" id="folio">
+    <h2>Examinations</h2>
+
+    <div class="folio">
+      <a href="createexam.html"><img src="Examination.jpg" ></a>
+      <h3>Create Examination</h3>
+      <p>In order to create examination you need to be logged in as a teacher. Then you can create questions for the subjects accordingly.</p>
+    </div>
+    
+    <div class="folio">
+      <a href="displayexam.jsp"><img src="Exam.jpg"></a>
+      <h3>Display all Examinations</h3>
+      <p>You can display all the examinations created by the teacher by clicking here. </p>
+    </div>
+    <div class="folio">
+      <a href="displayresults.jsp"><img src="Result.jpg"></a>
+      <h3>Display all Results</h3>
+      <p>You can display all the Results of the examinations taken by the students by clicking here. </p>
+    </div>
+    
+    
+
+  </div>
+  <div id="skills" class="skills">
+    <h2>Logging in </h2>
+    <p>You can log in as a teacher to create examinations and you can login as a student to take those examinations.</p>
+
+    <h3>Student</h3>
+    <p> You can log in as a student and take only those examinations that have been created by the teachers </p>
+
+    <h3>Teacher</h3>
+    <p>You can log in as a teacher and create examinations which can be taken by the students.</p>
+
+  </div>
+
+
+  <footer class="clearfix">
+    <div class="fleft">
+      <h2 id="contact">Contact Info</h2><br>
+      <a href="mailto:aradhana.mehra26@gmail.com?Subject=Hello" target="_top">
+        <p>aradhana.mehra26@gmail.com</p>
+      </a>
+      
+      <a href="https://twitter.com/EkeltonWelsh"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Twitter_Logo_Mini.svg/234px-Twitter_Logo_Mini.svg.png" alt="twitter icon"></a>
+      <a href="https://www.linkedin.com/in/michael-welsh-b1999b114
+"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/256px-Linkedin_icon.svg.png" alt="linkedin icon"></a>
+      <a href="https://www.facebook.com/ekeltonwelsh"><img class="social" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/267px-F_icon.svg.png" alt="facebook icon"></a>
+      <a href="https://github.com/michaelreedwelsh"><img class="social" src="https://pixabay.com/static/uploads/photo/2013/07/12/19/25/github-154769_960_720.png" alt="github icon"></a>
+     
+
+    </div>
+    <div class="fright">
+      <ul class="largefoot">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#folio">Examintaion</a></li>
+        <li><a href="#contact">Contact info</a></li>
+        <li><a href="index.html">Logging in</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

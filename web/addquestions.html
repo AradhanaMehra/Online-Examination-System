@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #DEB887;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FFEBCD;
+}
+
+div {
+  border-radius: 5px;
+  background-color: rgb(200, 200, 200);
+  padding: 20px;
+}
+</style>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <form method="post" action="AddQuestions">
+    <label for="question">Question</label>
+    <input type="text" id="ques" name="ques" placeholder="Question">
+
+    <label for="option">Options</label>
+    <input type="text" id="op1" name="op1" placeholder="Option">
+     <input type="text" id="op2" name="op2" placeholder="Option">
+      <input type="text" id="op3" name="op3" placeholder="Option">
+      <input type="text" id="op4" name="op4" placeholder="Option">
+      <input type="text" id="ans" name="ans" placeholder="Answer">
+  
+    <input type="submit" value="Add Another Question">
+    
+  </form>
+        <a href="homepage.html">Create exam </a>
+    </body>
+</html>
